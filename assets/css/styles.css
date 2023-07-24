@@ -1,0 +1,68 @@
+	/* === INÍCIO - CSS RESET === */
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* === FIM - CSS RESET === */
+
+    :root {
+        --gray: #333;
+        --medium-gray: #555;
+        --light-gray: #666;
+    }
+
+    main {
+        font-family: "Lucida Sans", "Lucida Sans Regular",
+            "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana",
+            "sans-serif";
+        margin: 0 auto;
+        padding: 2rem;
+        width: 100%;
+    }
+    @media (min-width: 568px) {
+        main {
+            max-width: 568px;
+        }
+    }
+    @media (min-width: 768px) {
+        main {
+            max-width: 768px;
+        }
+    }
+    @media (min-width: 992px) {
+        main {
+            max-width: 992px;
+        }
+    }
+    
