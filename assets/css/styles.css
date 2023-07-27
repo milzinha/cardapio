@@ -7,7 +7,7 @@
     *,
     *:before,
     *:after {
-        box-sizing: inherit;
+        box-sizing: border-box;
     }
 
     body,
@@ -34,35 +34,254 @@
         max-width: 100%;
         height: auto;
     }
+
+    a{
+        color:var(--primary);
+        text-decoration: none;
+    }
+
     /* === FIM - CSS RESET === */
 
     :root {
-        --gray: #333;
-        --medium-gray: #555;
-        --light-gray: #666;
+        --primary: #ac003d;
+        --accent: #fbebae;
+        --secondary: #ffa9c8;
     }
 
-    main {
-        font-family: "Lucida Sans", "Lucida Sans Regular",
-            "Lucida Grande", "Lucida Sans Unicode", "Geneva", "Verdana",
-            "sans-serif";
-        margin: 0 auto;
-        padding: 2rem;
+    /* === CSS - UTILS === */
+
+    .text-center{
+        text-align: center;
+    }
+
+    .mb-1{
+        margin-bottom: 1rem;
+    }
+    .mb-2{
+        margin-bottom: 2rem;
+    }
+    .mb-3{
+        margin-bottom: 3rem;
+    }
+
+    .d-flex{
+        display: flex;
+    }
+    .align-center{
+        align-items: center;
+    }
+    .justify-center{
+        justify-content: center;
+    }
+    .justify-between{
+        justify-content: center;
+    }
+
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+        margin-top: -0.5rem;
+    }
+    .grid .col{
+        flex: 0 0 auto;
+        padding: 1rem;
         width: 100%;
     }
-    @media (min-width: 568px) {
-        main {
-            max-width: 568px;
+    
+    @media (min-width: 860px) {
+        .grid .col{
+            width: 50%;
         }
     }
-    @media (min-width: 768px) {
-        main {
-            max-width: 768px;
+    @media (min-width: 1270px) {
+        .grid .col{
+            max-width: 400px;
+            width: 25%;
         }
     }
-    @media (min-width: 992px) {
-        main {
-            max-width: 992px;
+
+    .btn{
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    .btn:hover{
+        opacity: .8;
+    }
+
+    /* === FIM - CSS UTILS === */
+
+    main {
+        font-family: 'Bree Serif', 'Lucida Sans', serif;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header{
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        font-size: 1.4rem;
+        justify-content: center;
+        padding: .5rem 1rem;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    header .logo-image{
+        width: 150px;
+    }
+
+    .menu-h{
+        display: none;
+    }
+    .menu-h .navlink{
+        margin-right: 2rem;
+    }
+
+    @media (min-width: 630px) {
+        header{
+            justify-content: space-between;
+        }
+        .menu-h{
+            display: flex;
+        }
+    }
+
+    .banner-image{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        overflow: hidden;
+        transition: height .3s;
+    }
+
+    @media (min-width: 600px) {
+        .banner-image{
+            background-position: center 70%;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .banner-image{
+            height: 500px;
+        }
+    }
+
+    .banner-image .slogan{
+        color: var(--accent);
+        font-size: 2rem;
+        padding: 0 3rem;
+        position: absolute;
+        text-align: center;
+        text-shadow: 0px 0px 10px #000, 1px 1px 0px #000;
+        text-transform: uppercase;
+    }
+
+    @media (min-width: 560px) {
+        .banner-image .slogan{
+            font-size: 3rem;
+        }
+    }
+
+    section{
+        margin-bottom: 3rem;
+    }
+
+    .section-title{
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+    }
+
+    .produtos{
+        padding: 0 1rem;
+    }
+
+    @media (min-width: 630px) {
+        .produtos{
+            padding: 0 3rem;
+        }
+    }
+
+    .produto-caixa{
+        height: auto;
+        max-width: 500px;
+        padding: 1rem;
+        text-align: center;
+        width: 25%;
+    }
+
+    .produtos-image{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 4px;
+        height: 12rem;
+        transition: transform .6s;
+    }
+
+    .produtos-image:hover{
+        transform: scale(1.02);
+    }
+
+    .produtos-info{
+        text-align: center;
+    }
+
+    .btn-produtos-preco{
+        margin-top: .8rem;
+    }
+
+    .mapa{
+        padding: 0 1rem;
+    }
+    
+    @media (min-width: 630px) {
+        .mapa{
+            padding: 0 3rem;
         }
     }
     
+    @media (min-width: 860px) {
+        .mapa{
+            padding: 0;
+        }
+    }
+
+    .mapa-link{
+        display: block;
+        overflow: hidden;
+    }
+
+    .mapa-image{
+        transition: transform .5s;
+        transform: scale(2);
+    }
+
+    .mapa-image:hover{
+        transform: scale(2.1);
+    }
+
+    @media (min-width: 630px) {
+        .mapa-image{
+            transform: scale(1);
+        }
+        .mapa-image:hover{
+            transform: scale(1.02);
+        }
+    }
+
+    .link-icone{
+        margin-right: .5rem;
+        width: 30px;
+    }
+
+    footer{
+        margin-bottom: 5rem;
+    }

@@ -1,122 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			Cupcake Factory - Delícias em Miniatura, Momentos de Pura Ternura!
-		</title>
-		<link rel="stylesheet" href="assets/css/styles.css" />
-	</head>
-	<body>
-		<main>
-			<header>
-				<img
-					src="assets/images/Logo-Cupcake-Factory.png"
-					alt="Logo Cupcake Factory"
-				/>
-				<div class="top-content">
-					<a class="ancoras" href="#produtos">Produtos</a>
-					<a class="ancoras" href="#mapa">Localização</a>
-					<a class="ancoras" href="#contato">Contato</a>
-				</div>
-			</header>
-			<section class="banner">
-				<div class="banner-image">
-					<img
-						src="assets/images/Banner.jpg"
-						alt="Cupcakes Coloridos"
-					/>
-				</div>
-			</section>
-			<section id="produtos" class="produtos">
-				<div class="produto-caixa">
-					<div class="produtos-image">
-						<img
-							src="assets/images/cupcake (1).jpg"
-							alt="Produto 1"
-						/>
-					</div>
-					<div class="produtos-titulo">
-						<h2>Cupcake de baunilha</h2>
-					</div>
-					<div class="produtos-descricao">
-						<h2>Esse cupcake de baunilha é feito com isso aqui.</h2>
-					</div>
-					<div class="produtos-preco">
-						<h2>R$ 10,00</h2>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		Cupcake Factory
+	</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+	<main id="home">
+		<header>
+
+			<a href="#home" class="logo-container">
+				<img alt="Cupcake Factory" title="Voltar ao topo" src="assets/images/Logo-Cupcake-Factory.png"
+					alt="Logo Cupcake Factory" class="logo-image" />
+			</a>
+			<nav class="menu-h">
+				<a class="navlink" href="#produtos">Produtos</a>
+				<a class="navlink" href="#mapa">Localização</a>
+				<a class="navlink" href="#contato">Contato</a>
+			</nav>
+
+		</header>
+
+		<section class="banner">
+			<div class="banner-image d-flex align-center justify-center"
+				style="background-image: url(assets/images/Banner.jpg)">
+				<h1 class="slogan">Delícias em Miniatura, Momentos de Pura Ternura!</h1>
+			</div>
+		</section>
+
+		<section id="produtos" class="produtos">
+
+			<h2 class="section-title mb-3">Nossos Produtos</h2>
+
+			<div class="produtos-container grid justify-center">
+
+				<div class="produto-caixa col">
+					<div class="produtos-image" style="background-image:url(assets/images/cupcake1.jpg)"></div>
+
+					<div class="produtos-info">
+						<h2 class="produtos-titulo">
+							Cupcake de Baunilha
+						</h2>
+						<div class="produtos-descricao">
+							Esse cupcake de baunilha é feito com isso aqui.
+						</div>
+						<button class="btn btn-preco ">
+							R$ 10,00
+						</button>
 					</div>
 				</div>
 
-				<div class="produto-caixa">
-					<div class="produtos-image">
-						<img
-							src="assets/images/cupcake (2).jpg"
-							alt="Produto 2"
-						/>
-					</div>
-					<div class="produtos-titulo">
-						<h2>Cupcake de chocolate</h2>
-					</div>
-					<div class="produtos-descricao">
-						<h2>
-							Esse cupcake de chocolate é feito com isso aqui.
+				<div class="produto-caixa col">
+
+					<div class="produtos-image" style="background-image:url(assets/images/cupcake1.jpg)"></div>
+
+					<div class="produtos-info">
+						<h2 class="produtos-titulo">
+							Cupcake de Chocolate
 						</h2>
-					</div>
-					<div class="produtos-preco">
-						<h2>R$ 20,00</h2>
-					</div>
-				</div>
-				<div class="produto-caixa">
-					<div class="produtos-image">
-						<img
-							src="assets/images/cupcake (3).jpg"
-							alt="Produto 3"
-						/>
-					</div>
-					<div class="produtos-titulo">
-						<h2>Cupcake de morango</h2>
-					</div>
-					<div class="produtos-descricao">
-						<h2>Esse cupcake de morango é feito com isso aqui.</h2>
-					</div>
-					<div class="produtos-preco">
-						<h2>R$ 30,00</h2>
+						<div class="produtos-descricao">
+							Esse cupcake de chocolate é feito com isso aqui.
+						</div>
+						<button class="btn btn-preco ">
+							R$ 20,00
+						</button>
 					</div>
 				</div>
-			</section>
-			<section id="mapa" class="mapa">
-				<div class="mapa-descricao">
-					<h2>Venha conhecer nossa loja.</h2>
-					<a
-						class="ancoras"
-						href="https://www.google.com/"
-						target="_blank"
-						>Mapa</a
-					>
-				</div>
-				<div class="mapa-image">
-					<img src="assets/images/mapa.jpg" alt="Localização" />
-				</div>
-			</section>
-			<footer id="contato">
-				<div class="link-caixa">
-					<div class="link-icone">
-						<img
-							src="assets/images/instagram.JPG"
-							alt="Instagram"
-						/>
-					</div>
-					<div class="link-instagram">
-						<a
-							class="ancoras"
-							href="https://www.google.com/"
-							target="_blank"
-							>Instagram</a
-						>
+
+				<div class="produto-caixa col">
+
+					<div class="produtos-image" style="background-image:url(assets/images/cupcake1.jpg)"></div>
+
+					<div class="produtos-info">
+						<h2 class="produtos-titulo">
+							Cupcake de Morango
+						</h2>
+						<div class="produtos-descricao">
+							Esse cupcake de morango é feito com isso aqui.
+						</div>
+						<button class="btn btn-preco " title="Direcionar ao site de compra">
+							R$ 30,00
+						</button>
 					</div>
 				</div>
-			</footer>
-		</main>
-	</body>
+
+				<div class="produto-caixa col">
+
+					<div class="produtos-image" style="background-image:url(assets/images/cupcake1.jpg)"></div>
+
+					<div class="produtos-info">
+						<h2 class="produtos-titulo">
+							Cupcake de Doce de Leite
+						</h2>
+						<div class="produtos-descricao">
+							Esse cupcake de doce de leite é feito com isso aqui.
+						</div>
+						<button class="btn btn-preco " title="Direcionar ao site de compra">
+							R$ 30,00
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="mapa" class="mapa">
+
+			<h2 class="section-title mb-1">Venha conhecer nossa loja.</h2>
+			<p class="text-center mb-3">Rua dada sdasd, N. 123, Boa Vista, São José dos Campos - AM</p>
+
+			<a href="#" title="Clique para ver a Localição" class="mapa-link text-center">
+				<img src="assets/images/mapa.jpg" alt="Localização" class="mapa-image" />
+			</a>
+
+		</section>
+
+		<footer id="contato">
+
+			<h2 class="section-title mb-2">Fale com a gente</h2>
+
+			<div class="link-caixa d-flex align-center justify-center">
+
+				<img src="assets/images/instagram.JPG" alt="Instagram" class="link-icone" />
+
+				<a class="ancoras" href="https://www.google.com/" target="_blank"
+					class="link-content link-instagram">@cupcakefactory</a>
+			</div>
+		</footer>
+	</main>
+</body>
+
 </html>
