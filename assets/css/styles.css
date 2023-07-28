@@ -46,6 +46,7 @@
         --primary: #ac003d;
         --accent: #fbebae;
         --secondary: #ffa9c8;
+        --fontFamily: 'Bree Serif', 'Lucida Sans', serif;
     }
 
     /* === CSS - UTILS === */
@@ -115,7 +116,7 @@
     /* === FIM - CSS UTILS === */
 
     main {
-        font-family: 'Bree Serif', 'Lucida Sans', serif;
+        font-family: var(--fontFamily);
         margin: 0 auto;
         width: 100%;
     }
@@ -180,7 +181,7 @@
         position: absolute;
         text-align: center;
         text-shadow: 0px 0px 10px #000, 1px 1px 0px #000;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
     }
 
     @media (min-width: 560px) {
@@ -235,7 +236,15 @@
     }
 
     .btn-produtos-preco{
+        display: inline-block;
         margin-top: .8rem;
+        background-color: var(--primary);
+        color:#fff;
+        font-family: var(--fontFamily);
+        font-size: 1.5rem;
+        padding: 0.5rem 1.2rem 0.7rem;
+        border-radius: 50px;
+        min-width: 130px;
     }
 
     .mapa{
